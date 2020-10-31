@@ -19,7 +19,7 @@
         <th class="fl w-third pa2" onclick="sortTable(2)">Subject</div>
     </tr>
 
-    {{ range where .Site.Pages "Dir" "posts/" }}
+    {{ range where .Site.Pages "File.Dir" "posts/" }}
         <tr class="full"  style='cursor: pointer; cursor: hand;' onclick="window.location='{{.Permalink}}'">
             <td class="fl w-third pa2">{{.Date.Format "2006-01-02"}}</div>
             <td class="fl w-third pa2">{{.Params.Object}}</div>

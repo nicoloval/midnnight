@@ -4,13 +4,15 @@
 <body>
     <div class="wrap_reverse">
         <div class="box_scroll">
-            <h1 class="book_review" style="text-align: left;">{{.Params.Title}}</h1>
-            {{.Content}}
+            <div class="book_review">
+                {{.Content}}
+            </div>
+            {{- partial "tags_list.html" . -}}
         </div>
         <div class="box_no_scroll">
-            {{ with .Params.img }}
-            <a href={{ printf "%s" $.Params.Link }}><img src="{{ index . 0 }}" class="book-fit"></a>
-            {{end}}
+            <a href={{ printf "%s" $.Params.Link }}>
+                <img src={{ printf "%s%s" .Site.BaseURL .Params.Image }} class="book-fit">
+            </a>
         </div>
     </div>
 </body>

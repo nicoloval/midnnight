@@ -1,0 +1,13 @@
+<div class="list">
+    <div class="wrap">
+        <div class="w-100" style="background-color:black;color:white;">
+        <span>tags</span>
+        </div>
+        {{ range (.GetTerms "tags") }}
+        <div class="fl w-25 pa2" >
+            <a href="{{ .Permalink }}" class="full">{{ .LinkTitle }}</a>
+        </div>
+    {{ end }}
+    </div>
+</div>
+

@@ -1,11 +1,10 @@
 {{ define "main" }}
 <div class="container">
     <div class="section">
-        <div class="content">
-            <h1>{{ .Title }}</h1>
+        <div class="white_list">
             {{ .Content }}
             {{ range .Pages }}
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <a class="fl w-100 full" href="{{ .Permalink }}">{{ .Title }}</a>
             {{ end }}
         </div>
     </div>
