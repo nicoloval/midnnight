@@ -75,7 +75,6 @@ main {
 }
 
 .full {
-  display:block;
   text-decoration: underline;
   color: var(--fontColor);
 }
