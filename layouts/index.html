@@ -2,14 +2,10 @@
 <html lang="{{ .Site.LanguageCode }}">
     {{- partial "head.html" . -}}
     <body>
-        {{- partial "header.html" . -}}
 
 <main>
-    {{- partial "social.html" . -}}
-    <article>
-        <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md 
-        {{.Content}}
-        -->
+    {{- partial "header.html" . -}}
+    {{- partial "navbar.html" . -}}
     </article>
     <div class="list">
     <table style="width: 100%;" id="IndexTable">

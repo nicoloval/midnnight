@@ -49,6 +49,18 @@ main {
     font-size: 20px;
 }
 
+.white_bar {
+    margin: 20px;
+    border: 5px;
+    text-align: left;
+    font-size: 20px;
+}
+
+#white_bar > * {
+    display:block;
+    margin: 10px 0;
+}
+
 .row {
     text-align: left;
     margin: 10px;
@@ -63,6 +75,7 @@ main {
 }
 
 .full {
+  display:block;
   text-decoration: underline;
   color: var(--fontColor);
 }
