@@ -2,8 +2,8 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
-images:
-    - images/posts/
+object: Book Review
+images: "images/posts/"
 tags:
     - tag1
 ---
