@@ -3,7 +3,7 @@
 
 name = "Midnnight"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+licenselink = "https://github.com/nicoloval/midnnight/blob/master/LICENSE"
 description = ""
 homepage = "http://example.com/"
 tags = []
@@ -20,7 +20,3 @@ min_version = "0.41.0"
   homepage = ""
   repo = ""
 
-# params
-[params]
-    instagram = "https://www.instagram.com/"
-    reddit = "https://www.reddit.com/"
