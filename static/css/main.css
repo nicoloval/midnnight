@@ -37,7 +37,7 @@ main {
 
 .list {
     margin: 20px;
-    /*border: 5px solid var(--borderColor);*/
+    border: 5px solid var(--borderColor);
     text-align: left;
     font-size: 20px;
 }
