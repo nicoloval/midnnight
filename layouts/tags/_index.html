@@ -6,7 +6,7 @@
         </div>
         <div class="white_list">
             {{ .Content }}
-            {{ range .Pages }}
+            {{ range sort .Pages }}
             <a class="fl w-100 full" href="{{ .Permalink }}">{{ .Title }}</a>
             {{ end }}
         </div>
