@@ -10,16 +10,16 @@
     <div class="white_list">
     <table style="width: 100%;" id="IndexTable">
     <tr>
-        <th class="fl w-third pa2" onclick="sortTable(0)">Date</div>
-        <th class="fl w-third pa2" onclick="sortTable(1)">Object</div>
-        <th class="fl w-third pa2" onclick="sortTable(2)">Subject</div>
+        <th class="fl w-third" onclick="sortTable(0)">Date</div>
+        <th class="fl w-third" onclick="sortTable(1)">Object</div>
+        <th class="fl w-third" onclick="sortTable(2)">Subject</div>
     </tr>
 
     {{ range where .Site.Pages "File.Dir" "posts/" }}
         <tr class="full"  style='cursor: pointer; cursor: hand;' onclick="window.location='{{.Permalink}}'">
-            <td class="fl w-third pa2">{{.Date.Format "2006-01-02"}}</div>
-            <td class="fl w-third pa2">{{.Params.Object}}</div>
-            <td class="fl w-third pa2">{{.Title}}</div>
+            <td class="fl w-third">{{.Date.Format "2006-01-02"}}</div>
+            <td class="fl w-third">{{.Params.Object}}</div>
+            <td class="fl w-third">{{.Title}}</div>
         </tr>
     {{ end }}
     </table>
